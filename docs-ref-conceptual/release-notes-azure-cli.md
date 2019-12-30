@@ -786,7 +786,7 @@ Version 2.0.65
 ### Compute
 * Added `--computer-name` to `vm create` for setting a VM's computer name
 * Renamed `--ssh-key-value` renamed to `--ssh-key-values` for `[vm|vmss] create` - can now accept multiple ssh public key values or paths
-  * __Note__: This is ### not a breaking change - `--ssh-key-value` will be parsed correctly as it matches only `--ssh-key-values`
+  * __Note__: This is **not** a breaking change - `--ssh-key-value` will be parsed correctly as it matches only `--ssh-key-values`
 * Changed the `--type` argument of `ppg create` to be optional
 
 ## May 6, 2019
