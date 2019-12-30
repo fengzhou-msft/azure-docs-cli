@@ -13,6 +13,32 @@ ms.devlang: azurecli
 
 # Azure CLI release notes
 
+## December 31, 2019
+
+Version 2.0.79
+
+### AppConfig
+
+* Add support for importing/exporting feature flags
+
+### AppService
+
+* Fix issue #7154: Updating documentation for comand <> to use back ticks instead of single quotes
+
+### ARM
+
+* Fix `az resource tag`: Recovery Services Vault tags cannot be updated
+
+### Backup
+
+* Added new command 'backup protection undelete' to enable soft-delete feature for IaasVM workload
+* Added new parameter '--soft-delete-feature-state' to set backup-properties command
+
+### Compute
+
+* Fix `vm create` failure in Azure Stack profile.
+* vm monitor metrics tail/list-definitions: support query metric and list definitions for a vm.
+
 ## November 4, 2019
 
 Version 2.0.76
@@ -760,7 +786,7 @@ Version 2.0.65
 ### Compute
 * Added `--computer-name` to `vm create` for setting a VM's computer name
 * Renamed `--ssh-key-value` renamed to `--ssh-key-values` for `[vm|vmss] create` - can now accept multiple ssh public key values or paths
-  * __Note__: This is **not** a breaking change - `--ssh-key-value` will be parsed correctly as it matches only `--ssh-key-values`
+  * __Note__: This is ### not a breaking change - `--ssh-key-value` will be parsed correctly as it matches only `--ssh-key-values`
 * Changed the `--type` argument of `ppg create` to be optional
 
 ## May 6, 2019
