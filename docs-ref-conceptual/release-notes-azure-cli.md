@@ -13,6 +13,42 @@ ms.devlang: azurecli
 
 # Azure CLI release notes
 
+## January 07, 2020
+
+Version 2.1.0
+
+### ACR
+
+* [BREAKING CHANGE] Remove '--os' parameter for 'acr build', 'acr task create/update', 'acr run', and 'acr pack'. Use '--platform' instead.
+
+### AppConfig
+
+* Add support for importing/exporting feature flags
+
+### AppService
+
+* Fix issue #7154: Updating documentation for command <> to use back ticks instead of single quotes
+* Fix issue #11287: webapp up: By default make the app created using up 'should be 'SSL enabled'
+
+### ARM
+
+* Fix `az resource tag`: Recovery Services Vault tags cannot be updated
+
+### Backup
+
+* Added new command 'backup protection undelete' to enable soft-delete feature for IaasVM workload
+* Added new parameter '--soft-delete-feature-state' to set backup-properties command
+
+### Compute
+
+* Fix `vm create` failure in Azure Stack profile.
+* vm monitor metrics tail/list-definitions: support query metric and list definitions for a vm.
+
+### Storage
+
+* `az storage account create`: Remove preview flag for --enable-hierarchical-namespace parameter
+* Update azure-mgmt-storage version to 7.0.0 to use api version 2019-06-01
+
 ## December 17, 2019
 
 2.0.78
